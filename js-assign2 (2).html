@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input  id="input1" placeholder="enter number 1">
+    <input  id="input2" placeholder="enter number 2">
+    <br><br>
+    <button id="addButton">add</button>
+    <button id="substractButton">sub</button>
+    <button id="multiplyButton">Multiply</button>
+    <button id="divideButton">Divide</button>
+    
+    
+    <script>
+       
+        function addNumbers(){
+            var num1= (input1.value)*1
+            var num2= (input2.value)*1
+            sum= num1+num2
+            document.write("sum :" +sum)
+
+        }
+        function subNumbers(){
+            var num1= (input1.value)*1
+            var num2= (input2.value)*1
+            difference = num1 - num2
+            document.write("difference:  " +differ)
+
+        }
+        function MultiplyNumber(){
+            var num1= (input1.value)*1
+            var num2= (input2.value)*1
+            multi = num1 * num2
+            document.write("Multiply: "+multi)
+
+        }
+        function divideNumbers(){
+            var num1= (input1.value)*1
+            var num2= (input2.value)*1
+            divide = num1 / num2
+            document.write("divide:  " +divide)
+
+        }
+        addButton.addEventListener('click',addNumbers)
+        substractButton.addEventListener('click',subNumbers)
+        multiplyButton.addEventListener('click',MultiplyNumber)
+        divideButton.addEventListener('click',divideNumbers)
+
+    </script>
+
+
+</body>
+</html>
